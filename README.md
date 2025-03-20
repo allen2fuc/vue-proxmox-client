@@ -9,7 +9,7 @@ $ docker build -t allen2fuc/vue-proxmox-client:latest .
 $ docker rm -f vue-proxmox-client
 
 # 运行容器
-$ docker run -d -p 8080:80 --name vue-proxmox-client vue-proxmox-client
+$ docker run -d -p 8080:80 --name vue-proxmox-client allen2fuc/vue-proxmox-client:latest
 
 # 查看日志
 $ docker logs -f vue-proxmox-client
@@ -25,3 +25,9 @@ $ docker exec -it vue-proxmox-client cat /var/log/nginx/error.log
 $ docker push allen2fuc/vue-proxmox-client:latest
 
 ```
+
+###### 登陆页面
+![login.png](docs/img/login.png)
+
+###### 主页
+![login_after.png](docs/img/login_after.png)
